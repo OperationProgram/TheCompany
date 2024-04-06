@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'spectral-light';
+  src: url('../Styles/spectral.light.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'karla-bold';
+  src: url('../Styles/karla.bold.ttf') format('truetype'); 
+}
+
+
+
+
 .home-grid {
     /* background-color: green; */
     display: grid;
@@ -33,7 +46,8 @@
     margin: 10px;
     padding: 10px;
     font-size: 42px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'karla-bold', sans-serif; /* Use Karla Bold font or fallback to a generic sans-serif font */
+
     color: #fffc96; /* Crimson */
     text-shadow: 
         -1px -1px 2px #000,  
@@ -46,7 +60,7 @@
     margin: 10px;
     padding: 10px;
     font-size: 24px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'spectral-light', sans-serif; /* Use Spectral Light font or fallback to a generic sans-serif font */
     color: #ffffff;
     text-shadow: 
         -1px -1px 2px #000,  
@@ -130,3 +144,99 @@
     height: 50px;
     margin: 0 40px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Updated CSS styles */
+
+.interactive-skills-block{
+  display: grid;
+  place-content: center;
+  background-color: #0f0814;
+  
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  margin-right: 500px;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally within each column */
+  flex: 1;
+  border-bottom: 2px solid rgb(37, 0, 80);
+  position: relative; /* Add position relative to position the text container */
+
+}
+
+.column img {
+  width: 100%;
+
+  display: block;
+}
+
+.column a {
+  display: block;
+  text-decoration: none;
+}
+
+.description {
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+  font-family: 'karla-bold', sans-serif; /* Use Karla Bold font or fallback to a generic sans-serif font */
+  font-size: 24px;
+  position: absolute;
+  border-radius: 5px;
+  z-index: 1; /* Ensure description is above the image */
+} 
+
+.column:hover .description {
+  opacity: 0;
+  color: #556B2F;
+}
+
+/* New CSS styles for text container */
+.text-container {
+  position: absolute;
+  bottom: -100%; /* Initially hide the text container */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(84, 1, 133, 0.568);
+  padding: 10px;
+  transition: bottom 0.5s ease; /* Add transition for smooth animation */
+  opacity: 0; /* Initially hide the text */
+
+}
+
+
+
+.column:hover .text-container {
+  bottom: 0; /* Show text container on hover */
+  opacity: 1; /* Show the text when column is hovered over */
+
+}
+
+.sliding-text {
+  color: white;
+  margin: 0;
+  font-size: 16px;
+}
