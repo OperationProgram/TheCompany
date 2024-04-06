@@ -1,0 +1,132 @@
+.home-grid {
+    /* background-color: green; */
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+}
+
+.header-grid{
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire section */
+}
+
+
+
+.cta {
+    grid-column: 2 / span 5;
+    grid-row: 2 / span 1;  
+    z-index: 1; 
+}
+
+.cta h1 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fffc96; /* Crimson */
+    text-shadow: 
+        -1px -1px 2px #000,  
+         1px -1px 2px #000,
+        -1px  1px 2px #000,
+         1px  1px 2px #000; /* Multiple shadows with different offsets */
+}
+
+.cta p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 
+        -1px -1px 2px #000,  
+         1px -1px 2px #000,
+        -1px  1px 2px #000,
+         2px  2px 2px #000; /* Multiple shadows with different offsets */
+}
+
+.cta button {
+    width: 150px;
+    height: 50px;
+    margin-left: 120px;
+    font-size: 12px;
+    color: #FDD5B1;
+    background-color: #556B2F;
+    text-shadow: 
+        -1px -1px 2px #000,  
+        1px -1px 2px #000,
+        -1px  1px 2px #000,
+        2px  2px 2px #000; /* Multiple shadows with different offsets */
+}
+
+.cta button:hover {
+    background-color: #8FBC8F; /* New background color on hover */
+}
+
+
+
+
+
+/* CSS for the second section. */
+
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }

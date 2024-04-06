@@ -1,0 +1,55 @@
+@import "../_variables.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+}
+
+.navbar-logo {
+    margin: auto 25px;
+    z-index: 1;
+
+    
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    margin: 1rem;
+    padding: 2rem;
+    color: #ffffff;
+        text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Multiple shadows with different offsets */
+         z-index: 1;
+}
+
+.navbar-links li {
+    margin-left: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--text-color); /* Set the default text color */
+    transition: color 0.3s; /* Add transition effect for smooth color change */
+}
+
+/* Add hover effect for navbar links */
+.navbar-links li a:hover {
+    color: #392467; /* Change text color on hover */
+    text-decoration: underline; /* Underline on hover */
+}

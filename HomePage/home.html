@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Your Web Development Agency</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../Header/navigation-bar.css">
+    <link rel="stylesheet" href="../Footer/footer.css">
+
+</head>
+<body>
+    <header>
+        <script src="../Scripts/navbarLoader.js"></script>
+
+
+    </header>
+
+    <main class="home-grid">
+
+        <section class="image-form">
+            <video id="video-background"autoplay loop>
+                <source src="../assets/hero-section.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="header-grid">
+                <!-- Add image or form here -->
+                <!-- <img src="../Images/autumn-forest.jpg" alt="Autumn Forest"> -->
+                <div class="cta">
+                    <h1>Create a Stunning Website Without Breaking the Bank!</h1>
+                    <p>"Our dedicated team of young and innovative professionals understands the
+                        importance of a strong online presence in today's digital landscape, and
+                        we are committed to delivering exceptional value without compromising on 
+                        quality or creativity."</p>
+                    <!-- <button href="#" class="btn">You Design</button> -->
+                </div>
+            </div>
+        </section>
+        
+
+
+        <section class="infinite-scroll">
+            <div class="slider-container">
+                <div class="logos">
+                    <div class="logos-slide">
+                      <img src="./logos/3m.svg" />
+                      <img src="./logos/barstool-store.svg" />
+                      <img src="./logos/budweiser.svg" />
+                      <img src="./logos/buzzfeed.svg" />
+                      <img src="./logos/forbes.svg" />
+                      <img src="./logos/macys.svg" />
+                      <img src="./logos/menshealth.svg" />
+                      <img src="./logos/mrbeast.svg" />
+                    </div>
+              
+                    <div class="logos-slide">
+                      <img src="./logos/3m.svg" />
+                      <img src="./logos/barstool-store.svg" />
+                      <img src="./logos/budweiser.svg" />
+                      <img src="./logos/buzzfeed.svg" />
+                      <img src="./logos/forbes.svg" />
+                      <img src="./logos/macys.svg" />
+                      <img src="./logos/menshealth.svg" />
+                      <img src="./logos/mrbeast.svg" />
+                    </div>
+
+                    <script>
+                        var copy = document.querySelector(".logos-slide").cloneNode(true);
+                        document.querySelector(".logos").appendChild(copy);
+                    </script>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <script src="../Scripts/footerLoader.js"></script>
+    </footer>
+</body>
+</html>
