@@ -17,7 +17,7 @@
     /* grid-template-columns: repeat(12, 1fr); */
 }
 
-.header-grid{
+.cta-grid{
     background-size: cover;
     height: 100vh;
     display: grid;
@@ -49,6 +49,8 @@
     font-family: 'karla-bold', sans-serif; /* Use Karla Bold font or fallback to a generic sans-serif font */
 
     color: #fffc96; /* Crimson */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #CCCCCC; 
     text-shadow: 
         -1px -1px 2px #000,  
          1px -1px 2px #000,
@@ -91,8 +93,33 @@
 
 
 
-/* CSS for the second section. */
+/* CSS for the skills slide section. */
 
+
+.infinite-scroll {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  padding: 60px 0;
+  background: white;
+  position: relative;
+}
+
+.slider-container {
+  overflow: hidden; /* Hide overflow of the slider */
+}
+
+.logos {
+  display: flex; /* Use flexbox for easy alignment */
+}
+
+.logos-slide {
+  display: flex; /* Use flexbox for easy alignment */
+  animation: slide 35s infinite linear; /* Apply the slide animation */
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
 
 @keyframes slide {
     from {
@@ -103,140 +130,39 @@
     }
   }
   
-  .logos {
-    overflow: hidden;
-    padding: 60px 0;
-    background: white;
-    white-space: nowrap;
-    position: relative;
-  }
-  
-  .logos:before,
-  .logos:after {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-  }
-  
-  .logos:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-  }
-  
-  .logos:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-  }
-  
-  .logos:hover .logos-slide {
-    animation-play-state: paused;
-  }
-  
-  .logos-slide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
-  }
-  
-  .logos-slide img {
-    height: 50px;
-    margin: 0 40px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Updated CSS styles */
-
-.interactive-skills-block{
-  display: grid;
-  place-content: center;
-  background-color: #0f0814;
-  
+/* CSS for Testimonials */
+.testimonial-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  overflow: hidden; /* Ensure content within testimonial container doesn't overflow */
 }
 
-.image-container {
-  display: flex;
-  flex-direction: column; /* Change flex direction to column */
-  margin-right: 500px;
-  max-width: 800px;
-  border-radius: 5px;
+.testimonial-container {
+  display: flex; /* Enable horizontal layout */
+  transition: transform 0.5s ease; /* Smooth transition for slide effect */
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally within each column */
-  flex: 1;
-  border-bottom: 2px solid rgb(37, 0, 80);
-  position: relative; /* Add position relative to position the text container */
-
+.testimonial {
+  flex-shrink: 0; /* Prevent testimonials from shrinking */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 600px;
+  margin: 0 auto;
 }
 
-.column img {
-  width: 100%;
-
-  display: block;
+.testimonial-content {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-.column a {
-  display: block;
-  text-decoration: none;
+.testimonial-content p {
+  margin-bottom: 20px;
 }
 
-.description {
-  display: grid;
-  place-items: center;
-  margin-top: 50px;
-  font-family: 'karla-bold', sans-serif; /* Use Karla Bold font or fallback to a generic sans-serif font */
-  font-size: 24px;
-  position: absolute;
-  border-radius: 5px;
-  z-index: 1; /* Ensure description is above the image */
-} 
-
-.column:hover .description {
-  opacity: 0;
-  color: #556B2F;
-}
-
-/* New CSS styles for text container */
-.text-container {
-  position: absolute;
-  bottom: -100%; /* Initially hide the text container */
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(84, 1, 133, 0.568);
-  padding: 10px;
-  transition: bottom 0.5s ease; /* Add transition for smooth animation */
-  opacity: 0; /* Initially hide the text */
-
-}
-
-
-
-.column:hover .text-container {
-  bottom: 0; /* Show text container on hover */
-  opacity: 1; /* Show the text when column is hovered over */
-
-}
-
-.sliding-text {
-  color: white;
-  margin: 0;
+.testimonial-content cite {
+  font-style: normal;
   font-size: 16px;
+  color: #333;
 }
