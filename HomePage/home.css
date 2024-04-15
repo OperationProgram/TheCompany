@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'spectral-light';
+  src: url('../Styles/spectral.light.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'karla-bold';
+  src: url('../Styles/karla.bold.ttf') format('truetype'); 
+}
+
+
+
+
 .home-grid {
     /* background-color: green; */
     display: grid;
@@ -33,6 +46,9 @@
     margin: 10px;
     padding: 10px;
     font-size: 42px;
+    font-family: 'karla-bold', sans-serif; /* Use Karla Bold font or fallback to a generic sans-serif font */
+
+    color: #fffc96; /* Crimson */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #CCCCCC; 
     text-shadow: 
@@ -46,7 +62,7 @@
     margin: 10px;
     padding: 10px;
     font-size: 24px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'spectral-light', sans-serif; /* Use Spectral Light font or fallback to a generic sans-serif font */
     color: #ffffff;
     text-shadow: 
         -1px -1px 2px #000,  
@@ -106,21 +122,14 @@
 }
 
 @keyframes slide {
-  from {
-    transform: translateX(0);
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-
-
-
-
-
-
-
+  
 /* CSS for Testimonials */
 .testimonial-section {
   padding: 40px 0;
