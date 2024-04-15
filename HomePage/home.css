@@ -4,7 +4,7 @@
     /* grid-template-columns: repeat(12, 1fr); */
 }
 
-.header-grid{
+.cta-grid{
     background-size: cover;
     height: 100vh;
     display: grid;
@@ -34,7 +34,7 @@
     padding: 10px;
     font-size: 42px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #fffc96; /* Crimson */
+    color: #CCCCCC; 
     text-shadow: 
         -1px -1px 2px #000,  
          1px -1px 2px #000,
@@ -77,56 +77,83 @@
 
 
 
-/* CSS for the second section. */
+/* CSS for the skills slide section. */
 
+
+.infinite-scroll {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  padding: 60px 0;
+  background: white;
+  position: relative;
+}
+
+.slider-container {
+  overflow: hidden; /* Hide overflow of the slider */
+}
+
+.logos {
+  display: flex; /* Use flexbox for easy alignment */
+}
+
+.logos-slide {
+  display: flex; /* Use flexbox for easy alignment */
+  animation: slide 35s infinite linear; /* Apply the slide animation */
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
 
 @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(0);
   }
-  
-  .logos {
-    overflow: hidden;
-    padding: 60px 0;
-    background: white;
-    white-space: nowrap;
-    position: relative;
+  to {
+    transform: translateX(-100%);
   }
-  
-  .logos:before,
-  .logos:after {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
-  }
-  
-  .logos:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
-  }
-  
-  .logos:after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-  }
-  
-  .logos:hover .logos-slide {
-    animation-play-state: paused;
-  }
-  
-  .logos-slide {
-    display: inline-block;
-    animation: 35s slide infinite linear;
-  }
-  
-  .logos-slide img {
-    height: 50px;
-    margin: 0 40px;
-  }
+}
+
+
+
+
+
+
+
+
+/* CSS for Testimonials */
+.testimonial-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  overflow: hidden; /* Ensure content within testimonial container doesn't overflow */
+}
+
+.testimonial-container {
+  display: flex; /* Enable horizontal layout */
+  transition: transform 0.5s ease; /* Smooth transition for slide effect */
+}
+
+.testimonial {
+  flex-shrink: 0; /* Prevent testimonials from shrinking */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial-content {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.testimonial-content p {
+  margin-bottom: 20px;
+}
+
+.testimonial-content cite {
+  font-style: normal;
+  font-size: 16px;
+  color: #333;
+}
