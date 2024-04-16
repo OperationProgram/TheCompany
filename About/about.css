@@ -1,0 +1,31 @@
+html, body {
+    margin:0;padding:0
+}
+
+body {
+    font: 76% arial,sans-serif; 
+}
+
+p{margin:0 10px 10px}
+a{padding:5px; text-decoration:none; color:#000000;}
+
+#about_container {
+    /* background-color: green; */
+}
+
+#wrapper {
+    background-color: blue;
+}
+div#content p{line-height:1.4}
+.img-box {
+    background:#F6F0E0;
+}
+div#navigation ul{margin:15px 0; padding:0; list-style-type:none;}
+div#navigation li{margin-bottom:5px;}
+div#extra{background:#CCC8B3;}
+div#footer{background:#BFBD93;}
+div#footer p{margin:0;padding:5px 10px}
+#about_container{width:700px;margin:0 auto}
+div#content{float:left;width:500px}
+div#navigation{float:right;width:200px}
+div#extra{clear:both;width:100%}
