@@ -87,6 +87,13 @@
     .do_section .do_container .arrow_bg::before {
         display: none;
     }
+
+   
+    .about_img {
+        width: 120px;
+        height: 120px;
+    }
+    
 }
 
 @media (max-width: 480px) {}
