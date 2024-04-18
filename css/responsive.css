@@ -118,6 +118,12 @@
         margin-top: 0;
         margin-right: 9.2rem;
     }
+
+    .overlay:hover .overlay_btn {
+        width: 80px;
+        height: 45px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -131,17 +137,13 @@
 
     .about_img {
         position: relative;
-        
         width: 90px;
         height: 90px;
     }
 
     #about_content p{
         min-width: 0;
-        line-height: 1.4;
         text-align: justify;
-        margin-top: 2rem;
-        margin-left: 2.6rem;
     }
 
     .outer_border_responsive {

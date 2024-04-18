@@ -1,6 +1,36 @@
+.read_more_btn {
+	background-color:#74ad5a;
+	border-radius: 63px 74px 0px 58px;
+    -webkit-border-radius: 63px 74px 5px 58px;
+    -moz-border-radius: 63px 74px 0px 58px;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #92b879;
+    margin: 2.2rem;
+    float: right;
+}
+
+.read_more_btn a {
+    text-decoration: none;
+    color: inherit;
+}
+.read_more_btn:hover {
+	background-color:#668b54;
+}
+.read_more_btn:active {
+	position:relative;
+	top:1px;
+}
+
+
 #about_wrapper {
     display: flex;
-    /* background-color: blue; */
     padding-left: 15%;
     padding-right: 15%;
     width: 100%;
@@ -17,7 +47,7 @@
 #about_content p{
     min-width: 300px;
     line-height: 1.4;
-    text-align: justify;
+    text-align: left;
     margin-top: 2rem;
     margin-left: 2.6rem;
 }
@@ -123,23 +153,44 @@
     -ms-transform: translate(-50%, -50%);
 }
 
-.overlay_button {
+.overlay_btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ffffff; /* Adjust button background color */
-    color: #000000; /* Adjust button text color */
-    padding: 10px 20px; /* Adjust button padding */
-    border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
     z-index: 1;
     display: none;
 }
 
-.overlay:hover .overlay_button {
-    display: block;
+.overlay_btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.overlay:hover .overlay_btn {
+	display:inline-block;
+    width: 100px;
+    height: 60px;
+    background-color:#74ad5a;
+	border-radius: 63px 74px 0px 58px;
+    -webkit-border-radius: 63px 74px 5px 58px;
+    -moz-border-radius: 63px 74px 0px 58px;
+	border:1px solid #3b6e22;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #92b879;
+}
+
+.overlay:hover .overlay_btn:hover {
+    background-color:#668b54;
+
 }
 
 .overlay:hover .about_img img {
