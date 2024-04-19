@@ -152,6 +152,19 @@
         margin-top: 0;
         margin-right: 7.2rem;
     }
+
+    .contact_cta {
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .cta_seperator {
+        height: 2px;
+        width: 80%;
+        right: 10%;
+        bottom: 45%;
+    }
     
    
     
