@@ -12,6 +12,7 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.1;
 }
 
 p {
@@ -19,6 +20,8 @@ p {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    line-height: 1.4;
+    font-size: 18px;
 }
 
 #about_container {
@@ -74,8 +77,6 @@ p {
 #about_content p{
 
     min-width: 300px;
-    font-size: 18px;
-    line-height: 1.4;
     text-align: left;
     margin-top: 2rem;
     margin-left: 2.6rem;
@@ -124,6 +125,7 @@ p {
     border-right: solid 6px #28a745;
     border-radius: 50%;
     margin-top: 40px;
+    box-shadow: 16px 16px 20px 0 grey;
 }
 
 .outer_border_mid {
@@ -132,12 +134,14 @@ p {
     height: 257px;
     border-left: solid 6px #28a745;
     border-radius: 50%;
+    box-shadow: 16px 16px 20px 0 grey;
 }
 .outer_border_bottom {
     position: relative;
     width: 220px;
     height: 257px;
     border-right: solid 6px #28a745;
+    box-shadow: 16px 16px 20px 0 grey;
     border-radius: 50%;
 }
 
@@ -150,6 +154,7 @@ p {
     right: 3%;
     top: 8%;
     background: #F6F0E0;
+    /* box-shadow: 3px 3px 4px 0 grey; */
 }
 
 

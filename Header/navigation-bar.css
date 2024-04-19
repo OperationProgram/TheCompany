@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     z-index: 1;
-    background-color: rgb(153, 152, 152);
+    background-color: transparent;
 }
 
 .navbar-logo {
