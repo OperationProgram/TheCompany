@@ -157,13 +157,18 @@
         flex-direction: column;
         justify-content: space-around;
         height: auto;
+        text-align: left;
+        white-space: pre-line;
     }
 
+    .cta_left_block {
+        width: 100%;
+    }
     .cta_seperator {
         height: 2px;
         width: 80%;
         right: 10%;
-        bottom: 45%;
+        bottom: 50%;
     }
     
    
